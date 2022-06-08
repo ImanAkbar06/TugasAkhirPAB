@@ -25,6 +25,7 @@ public class DetailActivity extends Activity {
         yDetail = terima.getStringExtra("xDetail");
         yFoto = terima.getStringExtra("xFoto");
 
+
         tvNamaBarbershop.setText(yNama);
         tvDetail.setText(yDetail);
 

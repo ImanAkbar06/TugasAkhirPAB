@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Barbershop Palembang");
         rvBarbershop = findViewById(R.id.rv_Barbershop);
         rvBarbershop.setHasFixedSize(true);
-        data.addAll(DataBarbershop.ambilDataBarbershop());
         tampilDataCard();
     }
 
