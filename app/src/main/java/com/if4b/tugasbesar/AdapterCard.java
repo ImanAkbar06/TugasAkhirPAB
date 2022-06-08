@@ -46,7 +46,7 @@ public class AdapterCard extends RecyclerView.Adapter<AdapterCard.CardViewHolder
         Glide
                 .with((holder.itemView.getContext()))
                 .load(Barbershop.getFoto())
-                .into(holder.iv_foto);
+                    .into(holder.iv_foto);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
