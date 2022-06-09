@@ -16,17 +16,19 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView rvBarbershop;
-    private ArrayList<ModelBarbershop> data = new
-            ArrayList<>();
+    private ArrayList<ModelBarbershop> data = new ArrayList<>();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         getSupportActionBar().setTitle("Barbershop Palembang");
         rvBarbershop = findViewById(R.id.rv_Barbershop);
         rvBarbershop.setHasFixedSize(true);
+
+        data.addAll(DataBarbershop.ambilDataBarbershop());
         tampilDataCard();
     }
 
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 pindah.putExtra("xNama", data.getNama());
                 pindah.putExtra("xDetail", data.getDetail());
                 pindah.putExtra("xFoto", data.getFoto());
+                pindah.putExtra("xJam",data.getJam());
+                pindah.putExtra("xTelepon",data.getTelepon());
                 startActivity(pindah);
 
             }

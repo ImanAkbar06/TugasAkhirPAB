@@ -5,8 +5,11 @@ public class ModelBarbershop {
     private String nama;
     private String foto;
     private String Jam;
+    private String Telepon;
 
 
+    public String getTelepon() {return Telepon;}
+    public void setTelepon(String telepon) {Telepon = telepon;}
 
     public String getJam() {return Jam;}
     public void setJam(String jam) {Jam = jam;}

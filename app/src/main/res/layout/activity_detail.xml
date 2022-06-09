@@ -34,5 +34,34 @@
             android:padding="6dp"
             android:justificationMode="inter_word"
             />
+        <TextView
+            android:id="@+id/tv_Jam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jam"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:padding="6dp"
+            android:justificationMode="inter_word"
+            />
+        <TextView
+            android:id="@+id/tv_Telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Telp:"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:padding="6dp"
+            android:justificationMode="inter_word"
+            />
+
+        <Button
+            android:id="@+id/btn_Telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telepon"/>
+        <Button
+            android:id="@+id/btn_Lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi"/>
     </LinearLayout>
 </ScrollView>
